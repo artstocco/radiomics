@@ -1,0 +1,13 @@
+# Dados de saúde / imagens — NUNCA versionar
+data/
+outputs/
+*.dcm
+*.nrrd
+*.nii
+*.nii.gz
+
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+logs/

@@ -1,0 +1,29 @@
+# PyRadiomics extraction settings for CT.
+# Docs: https://pyradiomics.readthedocs.io/en/latest/customization.html
+
+setting:
+  # CT is already in a physical unit (HU): no z-score normalisation.
+  normalize: false
+  # Fixed bin width in HU (recommended for CT) rather than a fixed bin count.
+  binWidth: 25
+  # Isotropic 1 mm resampling so texture features are comparable between scans.
+  resampledPixelSpacing: [1, 1, 1]
+  interpolator: sitkBSpline
+  # Drop voxels outside a plausible soft-tissue range from the intensity mask
+  # (removes air/bone partial volume at the contour edges).
+  resegmentRange: [-150, 400]
+  label: 1
+  geometryTolerance: 1.0e-4
+  correctMask: true
+
+imageType:
+  Original: {}
+
+featureClass:
+  shape:
+  firstorder:
+  glcm:
+  glrlm:
+  glszm:
+  gldm:
+  ngtdm:

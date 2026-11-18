@@ -1,0 +1,15 @@
+# PyRadiomics: a versão do PyPI (3.1.0) não instala em Python >= 3.12 -> usar o GitHub
+pyradiomics @ git+https://github.com/AIM-Harvard/pyradiomics.git
+numpy
+pydicom
+SimpleITK
+rt-utils
+tcia_utils
+pandas
+pyyaml
+matplotlib
+seaborn
+scikit-learn
+jupyterlab
+ipywidgets
+openpyxl
